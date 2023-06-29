@@ -1,3 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap");
+
 body {
-  background: yellow;
+  padding: 0;
+  margin: 0;
+  font-family: "Cinzel", sans-serif;
+  box-sizing: border-box;
+  transition: 0.5 ease;
+}
+
+/* Colors */
+:root {
+  --primaryColor: hsl(26, 93%, 50%);
+  --hoverColor: hsl(26, 90%, 42%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --BlackColor: hsl(0, 0%, 18%);
+  --textColor: hsl(240, 1%, 48%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyBg: hsl(0, 0%, 96%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: hsl(330, 12%, 97%);
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.section {
+  padding: 0.2rem 0.5rem 2rem;
+}
+
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+img {
+  cursor: pointer;
+  width: 50px;
+  height: auto;
+}
+video {
+  width: 100%;
+  height: auto;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+}
+.btn {
+  padding: 0.4rem 1.2rem;
+  border: none;
+  border-radius: 2.5rem;
+  outline: none;
+  cursor: pointer;
+  background: var(--primaryColor);
+}
+
+.btn a {
+  color: var(--whiteColor);
+  font-weight: 500;
+}
+
+.btn:hover a {
+  color: var(--whiteColor);
+}
+.icon {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.setIntro {
+  max-width: 70%;
+  text-align: center;
+  margin: 0 auto 2rem;
+}
+
+.setIntro .secTitle {
+  color: var(--BlackColor);
+  line-height: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.secIntro p {
+  font-size: 13px;
+  color: var(--textColor);
+  font-weight: 500;
+}
+
+input {
+  font-size: 100%;
 }

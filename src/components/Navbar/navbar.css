@@ -1,1 +1,99 @@
-/*# sourceMappingURL=Navbar.css.map */
+/* Colors */
+:root {
+  --primaryColor: hsl(26, 93%, 50%);
+  --hoverColor: hsl(26, 90%, 42%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --BlackColor: hsl(0, 0%, 18%);
+  --textColor: hsl(240, 1%, 48%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyBg: hsl(0, 0%, 96%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: hsl(330, 12%, 97%);
+}
+
+.navbarSection .header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  width: 100%;
+  padding: 0;
+  z-index: 1000;
+}
+.navbarSection .header .logo {
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+.navbarSection .header .logo a {
+  font-weight: 500;
+  color: var(--primaryColor);
+}
+@media screen and (max-width: 768px) {
+  .navbarSection .header .navbar {
+    background: var(--greyBg);
+    position: absolute;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    padding: 0;
+    left: 0;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 2px 4px rgba(209, 209, 209, 0.904);
+    transition: 0.8 ease;
+    z-index: 10;
+  }
+  .navbarSection .header .navbar .navLists {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+  }
+  .navbarSection .header .navbar .navLists .navItem {
+    padding: 1rem 0;
+  }
+  .navbarSection .header .navbar .navLists .navItem .navLink {
+    color: var(--textColor);
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  .navbarSection .header .navbar .navLists .navItem .navLink:hover {
+    color: var(--primaryColor);
+  }
+  .navbarSection .header .navbar .navLists .navBtns {
+    flex-direction: column;
+  }
+  .navbarSection .header .navbar .navLists .navBtns .btn {
+    margin-top: 1rem;
+  }
+  .navbarSection .header .navbar .navLists .navBtns .btn a {
+    font-weight: 600;
+  }
+  .navbarSection .header .navbar .navLists .navBtns .btn a:hover {
+    color: var(--whiteColor);
+  }
+  .navbarSection .header .navbar .navLists .navBtns .btnLogin {
+    background: none;
+    border: 1px solid var(--primaryColor);
+  }
+  .navbarSection .header .navbar .navLists .navBtns .btnLogin a {
+    color: var(--primaryColor);
+  }
+  .navbarSection .header .navbar .navLists .navBtns .btnLogin:hover {
+    background: var(--hoverColor);
+  }
+  .navbarSection .header .navbar .navLists .navBtns .btnLogin:hover a {
+    color: var(--whiteColor);
+  }
+  .navbarSection .header .navbar .navLists .navBtns .btnSignup {
+    margin-bottom: 1rem;
+  }
+  .navbarSection .header .navbar .closeNavbar {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    color: var(--primaryColor);
+  }
+}/*# sourceMappingURL=Navbar.css.map */
