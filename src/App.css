@@ -67,6 +67,7 @@ video {
   outline: none;
   cursor: pointer;
   background: var(--primaryColor);
+  color: var(--whiteColor);
 }
 
 .btn a {

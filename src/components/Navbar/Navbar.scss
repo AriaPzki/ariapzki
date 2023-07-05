@@ -111,5 +111,16 @@
         left: 0;
       }
     }
+
+    .toggleNavbar {
+      .icon {
+        font-size: 30px;
+        color: var(--whiteColor);
+
+        &:hover {
+          color: var(--primaryColor);
+        }
+      }
+    }
   }
 }
