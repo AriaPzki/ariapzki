@@ -38,11 +38,11 @@
     height: -moz-max-content;
     height: max-content;
     padding: 0;
-    left: 0;
+    left: -500%;
     width: 100%;
     top: 0;
     box-shadow: 0 2px 4px rgba(209, 209, 209, 0.904);
-    transition: 0.8 ease;
+    transition: 0.3s ease;
     z-index: 10;
   }
   .navbarSection .header .navbar .navLists {
@@ -93,7 +93,10 @@
   .navbarSection .header .navbar .closeNavbar {
     position: absolute;
     top: 1rem;
-    right: 2rem;
+    right: 0.5rem;
     color: var(--primaryColor);
+  }
+  .navbarSection .header .activeNavbar {
+    left: 0;
   }
 }/*# sourceMappingURL=Navbar.css.map */

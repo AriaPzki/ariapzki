@@ -2,8 +2,18 @@ import React from "react";
 import "./navbar.css";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { AiOutlineMenu } from "react-icons/ai";
+import { useState } from "react";
 
 const Navbar = () => {
+  //create state for toggle the navbar
+  const [active, setActive] = useState("navbar");
+  const showNavbar = () => {
+    setActive("navbar activeNavbar");
+  };
+  const hideNavbar = () => {
+    setActive("navbar");
+  };
+
   return (
     <section className="navbarSection">
       <div className="header">
@@ -13,7 +23,7 @@ const Navbar = () => {
             <h1>AriaPzki</h1>
           </a>
         </div>
-        <div className="navbar">
+        <div className={active}>
           <ul className="navLists flex">
             <li className="navItem">
               <a href="#" className="navLink">
@@ -51,11 +61,11 @@ const Navbar = () => {
             </div>
           </ul>
 
-          <div className="closeNavbar">
+          <div onClick={hideNavbar} className="closeNavbar">
             <AiFillCloseCircle className="icon" />
           </div>
         </div>
-        <div className="toggleNavbar">
+        <div onClick={showNavbar} className="toggleNavbar">
           <AiOutlineMenu className="icon" />
         </div>
       </div>
