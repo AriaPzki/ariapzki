@@ -1,1 +1,50 @@
-/*# sourceMappingURL=Popular.css.map */
+/* Colors */
+:root {
+  --primaryColor: hsl(26, 93%, 50%);
+  --hoverColor: hsl(26, 90%, 42%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --BlackColor: hsl(0, 0%, 18%);
+  --textColor: hsl(240, 1%, 48%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyBg: hsl(0, 0%, 96%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: hsl(330, 12%, 97%);
+}
+
+.popular {
+  padding-top: 10rem;
+}
+.popular .secContainer .secHeader {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.popular .secContainer .secHeader .textDiv .secTitle {
+  color: var(--BlackColor);
+  line-height: 1.5rem;
+}
+.popular .secContainer .secHeader .textDiv p {
+  font-size: 13px;
+  color: var(--textColor);
+  font-weight: 500;
+}
+.popular .secContainer .secHeader .iconsDiv {
+  gap: 0.5rem;
+}
+.popular .secContainer .secHeader .iconsDiv .icon {
+  background: var(--greyText);
+  border-radius: 50%;
+  font-size: 1.8rem;
+}
+.popular .secContainer .secHeader .iconsDiv .icon:hover {
+  background: var(--BlackColor);
+  color: var(--whiteColor);
+}
+.popular .secContainer .secHeader .iconsDiv .leftIcon {
+  background: var(--BlackColor);
+  color: var(--whiteColor);
+}
+.popular .secContainer .secHeader .iconsDiv .leftIcon:hover {
+  background: var(--greyText);
+  color: var(--BlackColor);
+}/*# sourceMappingURL=Popular.css.map */
